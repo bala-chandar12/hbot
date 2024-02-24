@@ -13,7 +13,7 @@ async function run() {
     history: [
       {
         role: "user",
-        parts: "Hello, I have 2 dogs in my house.",
+        parts: "Hello, I have 5 dogs in my house.",
       },
       {
         role: "model",

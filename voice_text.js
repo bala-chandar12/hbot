@@ -1,7 +1,7 @@
 const startButton = document.getElementById('startRecording');
 const stopButton = document.getElementById('stopRecording');
 const outputElement = document.getElementById('output');
-
+const {run}=require("./chatgemini")
 let recognition;
 var res;
 
@@ -17,6 +17,9 @@ if ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window) {
 
     recognition.onresult = (event) => {
         const transcript = event.results[event.results.length - 1][0].transcript;
+        // text=await run(transcript);
+``
+
         outputElement.textContent = transcript;
         res+=transcript;
 
